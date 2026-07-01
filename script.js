@@ -9,6 +9,7 @@ let prices = {
   singularityShards: 50000,
   antimatter: 100000
 }
+let musicStarted = false;
 let planet = 0
 let fuel = 0
 let travelCost = 1000000
@@ -17,6 +18,8 @@ let upgradeCost3 = 300000
 let upgradeCost2 = 100000
 let upgradeCost1 = 30000
 let minesPerClick = 1
+const bgMusic = new Audio("bgMusic.mp3")
+bgMusic.loop = true
 const sellAllSound = new Audio("sellAll.mp3")
 const fuelText = document.getElementById("fuelText")
 const fuelButton = document.getElementById("fuelButton")
@@ -86,7 +89,10 @@ const mineButton = document.getElementById("mineButton")
 mineButton.addEventListener("click", function mineOnce() {
   roll = Math.random()
 for (let i = 0; i < minesPerClick; i++){
-
+if (!musicStarted) {
+    bgMusic.play();
+    musicStarted = true;
+}
 if (roll < 0.50){
   resources.stone++
   message.textContent = "You found stone!"
