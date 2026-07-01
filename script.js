@@ -17,6 +17,7 @@ let upgradeCost3 = 300000
 let upgradeCost2 = 100000
 let upgradeCost1 = 30000
 let minesPerClick = 1
+const sellAllSound = new Audio("sellAll.mp3")
 const fuelText = document.getElementById("fuelText")
 const fuelButton = document.getElementById("fuelButton")
 const upgradeButton2 = document.getElementById("upgradeButton2")
@@ -28,6 +29,8 @@ const sellAllButton = document.getElementById("sellAllButton")
 sellAllButton.addEventListener("click", function () {
   sellAll()
   message.textContent = "Sold All Resources"
+  sellAllSound.currentTime = 0
+  sellAllSound.play()
 })
 let roll
 const moneyCount = document.getElementById("moneyCount")
