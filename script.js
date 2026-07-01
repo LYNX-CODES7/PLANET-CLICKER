@@ -20,6 +20,7 @@ let upgradeCost1 = 30000
 let minesPerClick = 1
 const bgMusic = new Audio("bgMusic.mp3")
 bgMusic.loop = true
+const clickSound = new Audio("click.mp3")
 const sellAllSound = new Audio("sellAll.mp3")
 const fuelText = document.getElementById("fuelText")
 const fuelButton = document.getElementById("fuelButton")
@@ -92,7 +93,9 @@ for (let i = 0; i < minesPerClick; i++){
 if (!musicStarted) {
     bgMusic.play();
     musicStarted = true;
+  
 }
+  clickSound.play()
 if (roll < 0.50){
   resources.stone++
   message.textContent = "You found stone!"
