@@ -1,0 +1,24 @@
+<h1>PLANET MINER</h1>
+<p id= "message">Reach $100,000,000 To Win!</p>
+<p id= "multiplierTextCss">Multiplier: <span id= "multiplierText">1</span></p>
+<p id= "fuelTextCss">Fuel:  <span id= "fuelText">0</span></p>
+<p id="moneyCount">0</p>
+<div id="buttonContainer">
+    <button id="mineButton">Mine</button>
+    <button id="sellAllButton">Sell All</button>
+</div>
+<button id= "upgradeButton1"> Equipment Upgrade 1 ($30,000)</button>
+<button id= "upgradeButton2"> Equipment Upgrade 2 ($100,000)</button>
+<button id= "upgradeButton3"> Equipment Upgrade 3 ($300,000)</button>
+<button id= "fuelButton"> 500,000 Gallons of Rocket Fuel ($1,000,000)</button>
+<button id= "travelButton"> Travel To Space (1,000,000 Rocket Fuel)</button>
+
+<p>Stone: <span id= "stoneCount">0</span></p>
+<p>Silver: <span id= "silverCount">0</span></p>
+<p>Iron: <span id= "ironCount">0</span></p>
+<p>Gold: <span id= "goldCount">0</span></p>
+<p>Platinum: <span id= "platinumCount">0</span></p>
+<p>Diamond: <span id= "diamondCount">0</span></p>
+<p>Uranium: <span id= "uraniumCount">0</span></p>
+<p>Singularity Shards: <span id= "singularityShardCount">0</span></p>
+<p>Antimatter: <span id= "antimatterCount">0</span></p>
